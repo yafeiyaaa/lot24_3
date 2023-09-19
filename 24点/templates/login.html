@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}用户登录界面{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form action="/login_in" method="post">
+    <div>
+        <input type="text" name="subject"></input>
+    </div>
+
+    <div>
+        <button type="submit" name="submit" >submit</button>
+    </div>    
+
+  </form>
+{% endblock %}
